@@ -11,6 +11,7 @@ server.use('/api', apiRouter);
 
 server.get('/', (req, res) => {
   res.send(`<h1>Welcome to KJ Magill's Node Auth-1 project</h1>`);
+  res.json({ api: 'live' });
 });
 
 module.exports = server;
